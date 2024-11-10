@@ -56,6 +56,10 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
             
             collectionView.layoutIfNeeded()
         } else {
+            let controller = storyboard?.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .coverVertical
+            present(controller, animated: true, completion: nil)
             print("End of Onboarding")
         }
     }

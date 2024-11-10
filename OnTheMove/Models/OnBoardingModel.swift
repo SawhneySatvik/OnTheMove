@@ -36,4 +36,3 @@ let onboardingData: [OnBoardingModel] = [
         image: "onboarding4"
     )
 ]
-
