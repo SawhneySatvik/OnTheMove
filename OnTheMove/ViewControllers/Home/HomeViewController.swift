@@ -9,6 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController{
 
+    
+//    @IBOutlet weak var frequentLocationsCollectionView: UICollectionView!
+    
     @IBOutlet weak var upcomingRidesCollectionView: UICollectionView!
     
     @IBOutlet weak var peopleYouMayKnowCollectionView: UICollectionView!
@@ -20,17 +23,24 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     
+//        frequentLocationsCollectionView.delegate = self
+//        frequentLocationsCollectionView.dataSource = self
         upcomingRidesCollectionView.delegate = self
         upcomingRidesCollectionView.dataSource = self
+        peopleYouMayKnowCollectionView.delegate = self
+        peopleYouMayKnowCollectionView.dataSource = self
+        perksCollectionViewCell.delegate = self
+        perksCollectionViewCell.dataSource = self
         
         registerCells()
         
     }
     
     private func registerCells(){
-        upcomingRidesCollectionView.register(UINib(nibName: "UpcomingRidesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "UpcomingRidesCell")
+//        frequentLocationsCollectionView.register(UINib(nibName: "FrequentLocationCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FrequentLocationCollectionViewCell")
+        upcomingRidesCollectionView.register(UINib(nibName: "GeneralUpcomingRidesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GeneralUpcomingRidesCollectionViewCell")
         peopleYouMayKnowCollectionView.register(UINib(nibName: "PeopleYouMayKnowCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PeopleYouMayKnowCell")
-        perksCollectionViewCell.register(UINib(nibName: "UpcomingRidesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "UpcomingRidesCell")
+        perksCollectionViewCell.register(UINib(nibName: "GeneralUpcomingRidesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GeneralUpcomingRidesCollectionViewCell")
     }
     
 }
@@ -41,14 +51,18 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         
         switch collectionView{
             
+//        case frequentLocationsCollectionView:
+//            return frequentLocations.count
         case upcomingRidesCollectionView:
-            return upcomingRides.count
-            
+            return generalUpcomingRides.count
         case peopleYouMayKnowCollectionView:
             return favouritePeople.count
             
+        case perksCollectionViewCell:
+            return generalUpcomingRides.count
+            
         default:
-            return upcomingRides.count
+            return generalUpcomingRides.count
             
         }
     }
@@ -57,9 +71,16 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView{
+            
+//            case frequentLocationsCollectionView:
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FrequentLocationCollectionViewCell", for: indexPath) as! FrequentLocationCollectionViewCell
+//            cell.setup(frequentLocation: frequentLocations[indexPath.row])
+//            
+//            return cell
+            
             case upcomingRidesCollectionView:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UpcomingRidesCell", for: indexPath) as! UpcomingRidesCollectionViewCell
-            cell.setup(ride: upcomingRides[indexPath.row])
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralUpcomingRidesCollectionViewCell", for: indexPath) as! GeneralUpcomingRidesCollectionViewCell
+            cell.setup(ride: generalUpcomingRides[indexPath.row])
             
             cell.layer.cornerRadius = 14
             cell.layer.shadowColor = UIColor.black.cgColor
@@ -77,8 +98,20 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             cell.layer.cornerRadius = cell.peopleImageView.frame.height / 2
             return cell
             
+            case perksCollectionViewCell:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralUpcomingRidesCollectionViewCell", for: indexPath) as! GeneralUpcomingRidesCollectionViewCell
+            cell.setup(ride: generalUpcomingRides[indexPath.row])
+            
+            cell.layer.cornerRadius = 14
+            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowOpacity = 0.1
+            cell.layer.shadowOffset = .zero
+            cell.backgroundConfiguration?.cornerRadius = 14
+            
+            return cell
+            
         default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UpcomingRidesCell", for: indexPath) as! UpcomingRidesCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralUpcomingRidesCollectionViewCell", for: indexPath) as! GeneralUpcomingRidesCollectionViewCell
             
             return cell
         }
