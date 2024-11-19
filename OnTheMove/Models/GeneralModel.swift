@@ -17,6 +17,11 @@ struct Location{
     let zip: String?
 }
 
+
+
+
+
+
 let location1: Location = .init(
     location_id: "1",
     latitude: 28.6139,
