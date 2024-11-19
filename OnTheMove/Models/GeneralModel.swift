@@ -5,23 +5,6 @@
 //  Created by user@53 on 12/11/24.
 //
 
-struct Location{
-    let location_id: String
-    let latitude: Double
-    let longitude: Double
-    let name: String?
-    let address: String
-    let description: String?
-    let city: String?
-    let state: String?
-    let zip: String?
-}
-
-
-
-
-
-
 let location1: Location = .init(
     location_id: "1",
     latitude: 28.6139,

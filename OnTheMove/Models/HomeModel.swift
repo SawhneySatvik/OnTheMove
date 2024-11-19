@@ -23,19 +23,6 @@ struct GeneralUpcomingRides{
     let destinationImage: String
 }
 
-struct Impact{
-    let user_id: Int
-    let month: String
-    let year: String
-    let carbon_emissions: Double
-    let money_saved: Double
-}
-
-struct FavouritePeople{
-    let user_id: Int
-    let image_id: String
-}
-
 struct FrequentLocation{
     let user_id: Int
     let frequent_location_id: Int
