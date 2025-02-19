@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpcomingRidesCollectionViewCell" id="gTV-IL-0wX" customClass="UpcomingRidesCollectionViewCell" customModule="OnTheMoveV4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="147"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPL-X4-hWp">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="147"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 February 2025, 08:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2Y-H9-Avb">
+                                <rect key="frame" x="50" y="8" width="274" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S.R.M. Nagar, Chennai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-jB-jDk">
+                                <rect key="frame" x="50" y="43" width="274" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T. Nagar, Chennai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfs-U2-xSP">
+                                <rect key="frame" x="50" y="75" width="274" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igS-JM-dy2">
+                                <rect key="frame" x="8" y="107" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4 passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVI-KV-iis">
+                                <rect key="frame" x="202" y="107" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-1h-jAA">
+                                <rect key="frame" x="8" y="8" width="34" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3g3-vC-d0R">
+                                <rect key="frame" x="8" y="43" width="34" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZUd-4o-WOB">
+                                <rect key="frame" x="8" y="75" width="34" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Rx-sM6">
+                                <rect key="frame" x="158" y="107" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p2Y-H9-Avb" secondAttribute="trailing" constant="8" id="8ig-0N-sVO"/>
+                            <constraint firstItem="gxt-jB-jDk" firstAttribute="leading" secondItem="iPL-X4-hWp" secondAttribute="leading" constant="50" id="8v5-2p-noA"/>
+                            <constraint firstItem="gxt-jB-jDk" firstAttribute="top" secondItem="p2Y-H9-Avb" secondAttribute="bottom" constant="8" id="9JQ-Pr-nl4"/>
+                            <constraint firstItem="igS-JM-dy2" firstAttribute="top" secondItem="Pfs-U2-xSP" secondAttribute="bottom" constant="8" id="Jxf-Jl-IS2"/>
+                            <constraint firstItem="Pfs-U2-xSP" firstAttribute="leading" secondItem="iPL-X4-hWp" secondAttribute="leading" constant="50" id="Ksg-om-xCX"/>
+                            <constraint firstItem="p2Y-H9-Avb" firstAttribute="top" secondItem="iPL-X4-hWp" secondAttribute="top" constant="8" id="LtD-u7-MD5"/>
+                            <constraint firstItem="p2Y-H9-Avb" firstAttribute="leading" secondItem="iPL-X4-hWp" secondAttribute="leading" constant="50" id="XeO-xG-BDw"/>
+                            <constraint firstItem="igS-JM-dy2" firstAttribute="leading" secondItem="iPL-X4-hWp" secondAttribute="leading" constant="8" id="a4P-UM-N1q"/>
+                            <constraint firstItem="Pfs-U2-xSP" firstAttribute="top" secondItem="gxt-jB-jDk" secondAttribute="bottom" constant="8" id="f1a-i8-ObH"/>
+                            <constraint firstItem="UVI-KV-iis" firstAttribute="top" secondItem="Pfs-U2-xSP" secondAttribute="bottom" constant="8" id="i0L-pF-euh"/>
+                            <constraint firstAttribute="trailing" secondItem="gxt-jB-jDk" secondAttribute="trailing" constant="8" id="iFb-Js-JDc"/>
+                            <constraint firstAttribute="width" constant="332" id="mFJ-6M-vKH"/>
+                            <constraint firstAttribute="height" constant="147" id="pzM-lv-EDC"/>
+                            <constraint firstAttribute="trailing" secondItem="UVI-KV-iis" secondAttribute="trailing" constant="8" id="tWh-iW-MRY"/>
+                            <constraint firstAttribute="trailing" secondItem="Pfs-U2-xSP" secondAttribute="trailing" constant="8" id="xa7-rE-J5S"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iPL-X4-hWp" secondAttribute="bottom" id="3RG-15-pAa"/>
+                <constraint firstItem="iPL-X4-hWp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YFX-tG-Baw"/>
+                <constraint firstAttribute="trailing" secondItem="iPL-X4-hWp" secondAttribute="trailing" id="aiX-IF-d2e"/>
+                <constraint firstItem="iPL-X4-hWp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cXC-LS-SNs"/>
+            </constraints>
+            <size key="customSize" width="332" height="147"/>
+            <connections>
+                <outlet property="costLabel" destination="igS-JM-dy2" id="2E8-Oj-5xZ"/>
+                <outlet property="dateImage" destination="9Ag-1h-jAA" id="uEO-iV-wgd"/>
+                <outlet property="dateLabel" destination="p2Y-H9-Avb" id="XK7-iV-QRy"/>
+                <outlet property="destinationImage" destination="ZUd-4o-WOB" id="YYe-8h-zMU"/>
+                <outlet property="destinationLocationLabel" destination="Pfs-U2-xSP" id="eI4-VR-oGo"/>
+                <outlet property="passengerCountImage" destination="bns-Rx-sM6" id="uwD-dU-a2v"/>
+                <outlet property="passengerCountLabel" destination="UVI-KV-iis" id="hBe-Fc-eRQ"/>
+                <outlet property="sourceImage" destination="3g3-vC-d0R" id="nZK-gd-ZDO"/>
+                <outlet property="sourceLocationLabel" destination="gxt-jB-jDk" id="4p7-ir-a9e"/>
+            </connections>
+            <point key="canvasLocation" x="259.5419847328244" y="54.577464788732399"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="location" catalog="system" width="128" height="119"/>
+        <image name="person.2" catalog="system" width="128" height="87"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
